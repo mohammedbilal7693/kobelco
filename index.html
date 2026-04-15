@@ -1,0 +1,151 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Used Machine Status</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #ffffff);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background: #1976d2;
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        .date {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #0d47a1;
+            color: white;
+            font-size: 14px;
+        }
+        tr:hover {
+            background-color: #f1f8ff;
+        }
+        .status-completed {
+            color: green;
+            font-weight: bold;
+        }
+        .status-progress {
+            color: orange;
+            font-weight: bold;
+        }
+        .card {
+            margin-top: 30px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #1976d2;
+        }
+        .progress-item {
+            padding: 10px;
+            background: #fff3e0;
+            border-left: 6px solid orange;
+            border-radius: 8px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #555;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body><div class="container"><div class="header">
+    <h1>Used Machine Status</h1>
+    <div class="date">Date: 15/04/2026</div>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>No</th>
+            <th>Machine Name</th>
+            <th>Model No</th>
+            <th>MFD</th>
+            <th>Inward Date</th>
+            <th>Status</th>
+            <th>Dispatch</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>SK210 HDLC-8</td>
+            <td>YC12-83777</td>
+            <td>24/11/2017</td>
+            <td>18/03/2025</td>
+            <td class="status-completed">Completed</td>
+            <td>Waiting for Dispatch</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>SK220 XDLC-10</td>
+            <td>YD15-85546</td>
+            <td>08/10/2017</td>
+            <td>18/03/2025</td>
+            <td class="status-completed">Completed</td>
+            <td>07/04/2026</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>SK380 XDLC-10</td>
+            <td>YC14-505838</td>
+            <td>2021</td>
+            <td>09/03/2025</td>
+            <td class="status-progress">Work in Progress</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="card">
+    <h2>Current Work Progress</h2>
+    <div class="progress-item">
+        SK380 - YC14-505838 (Work in Progress)
+    </div>
+</div>
+
+<footer>
+    Machine Tracking System | Created for Daily Workshop Monitoring
+</footer>
+
+</div></body>
+</html>
